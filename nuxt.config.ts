@@ -13,14 +13,14 @@ export default defineNuxtConfig({
 		"@nuxt/content",
 		['nuxt-mail', {
 			message: {
-				to: 'harshasterhk@gmail.com',
+				to: ['harshasterhk@gmail.com','study@preponn.com']
 			},
 			smtp: {
-				host: 'smtp-relay.sendinblue.com',
-				port: 587,
+				host: process.env.PREPONN_WEB_MAIL_HOST,
+				port: process.env.PREPONN_WEB_MAIL_PORT,
 				auth: {
-					user: '31hk12@gmail.com',
-					pass: 'npxqzcZjXOs9PCa3'
+					user: process.env.PREPONN_WEB_MAIL_USERNAME,
+					pass: process.env.PREPONN_WEB_MAIL_PASSWORD
 				},
 			},
 		}]
