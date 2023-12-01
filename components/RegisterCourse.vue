@@ -7,7 +7,7 @@
                 <form>
                     <div class="mb-3">
                         <label for="name" class="form-label" required>Name</label>
-                        <input type="text" class="form-control" id="name" v-model="name" required>
+                        <input type="text" class="form-control" id="name" v-model="sname" required>
                     </div>
                     <div class="mb-3">
                         <label for="country" class="form-label" required>Country</label>
@@ -26,7 +26,7 @@
                         <label for="email" class="form-label" required>Email Address</label>
                         <input type="email" class="form-control" v-model="email" id="email">
                     </div>
-                    <button type="submit" class="btn pon-btn" @click="registerCourse" :class="{'disabled' : this.loading}">{{ this.loading ? "Please Wait..." : "Register" }}</button>
+                    <button type="submit" class="btn pon-btn" @click="registerCourse" :class="{'disabled' : loading}">{{ loading ? "Please Wait..." : "Register" }}</button>
                 </form>
             </div>
         </div>
@@ -38,7 +38,7 @@
         props: ['course'],
         data : function(){
             return {
-                name : '',
+                sname : '',
                 school : '',
                 phone : '',
                 email : '',
@@ -49,7 +49,7 @@
         methods : {
             registerCourse(e){
                 e.preventDefault()
-                if(this.name == '' || this.school == '' || this.phone == '' || this.email == ''){
+                if(this.sname == '' || this.school == '' || this.phone == '' || this.email == ''){
                     swal('Please fill all the fields !', {
                         icon: 'error',
                         buttons : {
@@ -66,7 +66,7 @@
                     subject: 'New registration : ' + this.course,
                     text: 
                         `Hello there, there is a new registration for ${this.course}. Here are the details : \n
-                        Name : ${this.name} \n
+                        Name : ${this.sname} \n
                         School : ${this.school} \n
                         Phone : ${this.phone} \n
                         Email : ${this.email} \n

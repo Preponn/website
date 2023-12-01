@@ -9,22 +9,7 @@ export default defineNuxtConfig({
 		]
 	  },
 	devtools: { enabled: true },
-	modules: [
-		"@nuxt/content",
-		['nuxt-mail', {
-			message: {
-				to: ['harshasterhk@gmail.com','study@preponn.com']
-			},
-			smtp: {
-				host: process.env.PREPONN_WEB_MAIL_HOST,
-				port: process.env.PREPONN_WEB_MAIL_PORT,
-				auth: {
-					user: process.env.PREPONN_WEB_MAIL_USERNAME,
-					pass: process.env.PREPONN_WEB_MAIL_PASSWORD
-				},
-			},
-		}]
-	],
+	modules: ["@nuxt/content"],
 	app: {
 		head: {
 			title: "Preponn",

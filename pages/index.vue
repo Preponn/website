@@ -8,18 +8,18 @@
 						<div class="display-1 fw-bold">Preponn<sup>&copy;</sup></div>
 						<a @click="this.scrollToCourses" class="btn btn-outline-light rounded-5 mt-3 justify-self-center">Explore Courses</a>
 					</div>
-					<div class="col ps-4 py-4 rounded-4 shadow d-none align-self-center d-md-block" style="backdrop-filter:blur(7px) brightness(60%)" :class="{'rounded-bottom-0' : this.searchbox.length>0}">
+					<div class="col ps-4 py-4 rounded-4 shadow d-none align-self-center d-md-block" style="backdrop-filter:blur(7px) brightness(60%)" :class="{'rounded-bottom-0' : searchbox.length>0}">
 						<div class="lead mb-4 text-warning">Find your exam</div>
 						<p class="text-white mb-4 fs-2">
 							Find your way to greater scores.
 						</p>
 						<div class="d-flex">
 							<div class="">
-								<input id="search" v-model="this.searchbox" type="text" class="input-form fs-4 px-3" placeholder="Your exam name"/>
+								<input id="search" v-model="searchbox" type="text" class="input-form fs-4 px-3" placeholder="Your exam name"/>
 							</div>
-							<div class="position-absolute bg-white w-100" style="top:100%;left:0;box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);" v-show="this.searchbox.length>0">
+							<div class="position-absolute bg-white w-100" style="top:100%;left:0;box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);" v-show="searchbox.length>0">
 								<ul class="list-group">
-									<li v-for="(c,i) in this.filteredCourses" :key="i" class="list-group-item d-flex">
+									<li v-for="(c,i) in filteredCourses" :key="i" class="list-group-item d-flex">
 										<NuxtLink :to="c.link" class="text-decoration-none w-100 text-black">{{c.name}}</NuxtLink>
 									</li>
 								</ul>
@@ -33,7 +33,7 @@
 		<div class="container" id="courseDiv">
 			<div class="row justify-content-center align-items-start mt-4">
 				<h4 class="text-muted text-center my-4">Visit course pages to <span class="text-black">get started !</span></h4>
-				<div v-for="(c,i) in this.courses" :key="i" class="col-12 col-md-6 col-lg-3 p-1 my-md-5" >
+				<div v-for="(c,i) in courses" :key="i" class="col-12 col-md-6 col-lg-3 p-1 my-md-5" >
 					<div class="rounded pb-1 border" style="min-height: 200px;">
 						<h3 class="fw-normal fs-5 pb-1 p-2 text-black shadow-sm" style="border-bottom:2px dotted #EA8825;background-color: #FFCB60;">{{c.title}}</h3>
 						<ul class="mt-3">
