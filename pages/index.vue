@@ -223,13 +223,13 @@ export default {
 				{
 					heading: "SAT Batch",
 					tag: "LiveOnline",
-					link: ["/sat", "Enroll Now"],
+					link: ["/course/sat", "Enroll Now"],
 					img : 'books.jpg'
 				},
 				{
 					heading: "SAT One-on-one",
 					tag: "LiveOnline",
-					link: ["/sat", "Enroll Now"],
+					link: ["/course/sat", "Enroll Now"],
 					img : 'library.jpg'
 				},
 			],

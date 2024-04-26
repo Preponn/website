@@ -1,6 +1,6 @@
 <template>
     <main>
-        <CoursePageHeader :course="this.$route.params.course.toUpperCase()"/>
+        <CoursePageHeader :course="course"/>
         <div class="container mt-3">
             <div class="row justify-content-center">
                 <div class="col-12 text-center">
@@ -13,3 +13,19 @@
         </div>
     </main>
 </template>
+
+<script>
+export default{
+    data(){
+        return{
+            course: this.$route.params.course
+        }
+    },
+    head(){
+        return{
+            title: this.course + ' | Coming Soon'
+        }
+    }
+
+}
+</script>

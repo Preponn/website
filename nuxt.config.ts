@@ -1,4 +1,13 @@
-export default defineNuxtConfig({
+export default ({
+	target : 'static',
+	generate : {
+		routes : [
+			"/course/sat",
+			"/course/act",
+			"/course/amc-8",
+			"/course/gre",
+		]
+	},
 	build: {
 		transpile: [
 		  '@fortawesome/vue-fontawesome',
