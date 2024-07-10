@@ -71,10 +71,10 @@
                 <h2 class="border mt-3 py-1" style="border-bottom: 3px solid #ea8825 !important;">Meet our trainers</h2>
                 <div class="col-12 col-md-6 p-1">
                     <div class="border shadow rounded-3 d-flex"  style="border-left:4px solid #2c3e50 !important;" >
-                        <img src="~/assets/trainers/digvijay.jpg" class="rounded-2" alt="Digvijay Sir">
+                        <img src="~/assets/trainers/digvijay.jpg" class="rounded-2" alt="Digvijay Sir" style="object-fit: cover;">
                         <div class="ms-2 p-2 w-100">
                             <h3 class=" pb-2" style="border-bottom: 3px solid #2c3e50">Digvijay Singh</h3>
-                            <p class="p-2" style="height:10rem;overflow-y: auto;">
+                            <p class="p-2" style="height:15rem;overflow-y: auto;">
                                 "With an experience of 8 years, I continue to feel motivated,
                                 solution-oriented and responsible towards my mentees, who over
                                 the years have ranged across demographics; For example: IIT Roorkee, DIT University, UPES university, Welham Girls/Boys, KASIGA to
@@ -99,7 +99,7 @@
                         <!-- <img src="@/assets/trainers/digvijay.jpg" class="img-fluid rounded-2" alt="Digvijay Sir"> -->
                         <div class="ms-2 p-2 w-100">
                             <h3 class=" pb-2" style="border-bottom: 3px solid #2c3e50">Banerjee Sir</h3>
-                            <p class="p-2" style="height:10rem;overflow-y: auto;">
+                            <p class="p-2" style="height:15rem;overflow-y: auto;">
                                 Our Senior Dual Trainer, Banerjee Sir is a certified Master Trainer
                                 from one of the largest test prep companies in the world. He has
                                 rich experience of over 18 years in teaching Math and Verbal for
@@ -123,10 +123,10 @@
 
                 <div class="col-12 col-md-6 p-1">
                     <div class="border shadow rounded-3 d-flex"  style="border-left:4px solid #2c3e50 !important;" >
-                        <img src="~/assets/trainers/payal.jpg" class="img-fluid rounded-2" alt="Payal Ma'am">
+                        <img src="~/assets/trainers/payal.jpg" object-fit:cover class="img-fluid rounded-2" alt="Payal Ma'am" style="object-fit: cover;">
                         <div class="ms-2 p-2 w-100">
                             <h3 class=" pb-2" style="border-bottom: 3px solid #2c3e50">Payel Mukherjee</h3>
-                            <p class="p-2" style="height:10rem;overflow-y: auto;">
+                            <p class="p-2" style="height:15rem;overflow-y: auto;">
                                 "Being an Enthusiastic, academic mentor with an overall experience
                                 of 6 plus years, I am eager to foster positive learning environment by
                                 encouraging students to develop individual skills. I have an experience of conducting Verbal Reasoning classes for GRE, GMAT, SAT,
@@ -143,10 +143,10 @@
 
                 <div class="col-12 col-md-6 p-1">
                     <div class="border shadow rounded-3 d-flex"  style="border-left:4px solid #2c3e50 !important;" >
-                        <img src="~/assets/trainers/sanjukta.jpg" class="img-fluid rounded-2" alt="Digvijay Sir">
+                        <img src="~/assets/trainers/sanjukta.jpg" class="img-fluid rounded-2" alt="Sanjukta Ma'am" style="object-fit: cover;">
                         <div class="ms-2 p-2 w-100">
                             <h3 class=" pb-2" style="border-bottom: 3px solid #2c3e50">Sanjukta Sarkar</h3>
-                            <p class="p-2" style="height:10rem;overflow-y: auto;">
+                            <p class="p-2" style="height:15rem;overflow-y: auto;">
                                 "I've been a Public Speaking coach at The BSS School, since the
                                 last 5 and a half years, preparing students for state-level, national, and international debating experiences; Some of the notable
                                 ones have been with The Harrow School, and The Trinity: Harvard, Oxford, and Cambridge. With a Masters in English Literature, I've been associated with English teaching as a remedial
@@ -160,7 +160,47 @@
                         </div>
                     </div>
                 </div>
+            
+
+             <div class="col-12 col-md-6 p-1">
+                    <div class="border shadow rounded-3 d-flex"  style="border-left:4px solid #2c3e50 !important;" >
+                        <!-- <img src="~/assets/trainers/citation.jpg" class="img-fluid rounded-2" alt="Bhavna Ma'am"> -->
+                        <div class="ms-2 p-2 w-100">
+                            <h3 class=" pb-2" style="border-bottom: 3px solid #2c3e50">Bhavna Saini</h3>
+                            <p class="p-2" style="height:15rem;overflow-y: auto;">
+                                "I am Bhavna Saini, a highly motivated individual with a strong educational background, including a PhD-Chemical Sciences from CSIR-IIP and graduation and post-graduation degrees from Delhi University, India. My professional journey has focused on material synthesis and heterogeneous catalysis, where I have developed expertise in data interpretation of various characterization techniques, such as XRD, FTIR, XPS, TEM, SEM, GCMS, TPD, NMR, ICP, UV-Vis, and Raman spectroscopy. I have a strong publication record with prestigious articles on sustainability and green chemistry. You can explore my research contributions on my Google Scholar profile <a href="https://scholar.google.com/citations?user=3yQBbBUA&user=3yQBbBUAAAAJ">https://scholar.google.com/citations?user=3yQBbBUA&user=3yQBbBUAAAAJ</a>. In addition to my research role, I have also dedicated my time to tutoring students in various chemistry, including Chemistry Honours, AP Chemistry, SAT Chemistry, and other curricula IB, IGCSE, CBSE, ICSE Chemistry. This has allowed me to impart my knowledge for chemistry to a diverse range of students. My passion for both research and education drives me to seek new challenges and make valuable contribution"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 p-1">
+                    <div class="border shadow rounded-3 d-flex"  style="border-left:4px solid #2c3e50 !important;" >
+                        <img src="~/assets/trainers/kamiya.jpg" class="img-fluid rounded-2" alt="Kamiya Ma'am" style="object-fit: cover;">
+                        <div class="ms-2 p-2 w-100">
+                            <h3 class=" pb-2" style="border-bottom: 3px solid #2c3e50">Kamiya Tikoo</h3>
+                            <p class="p-2" style="height:15rem;overflow-y: auto;">
+                                "Dr. Kamiya Tikoo is an Assistant Professor in Biotechnology and Biochemistry with diverse research and teaching experience of 8 years. She achieved her Ph.D. in Biotechnology from Jaipur National University. She has an extensive academic background including a PG Diploma in Bio-chemical Technology and Master of Science in Biosciences from prestigious universities. Dr. Tikoo has experience in various colleges and universities in India, working as Assistant Professor in the Departments of Biotechnology and Biochemistry. She has worked on projects related to the identification and characterization of bacterial isolates and signaling pathways involved in obesity and diabetes. Her research contributions are published in various renowned journals and she has delivered seminars on topics such as modes of genetic exchange among viruses and proteomics to International students. She has participated in interdisciplinary conferences on recent trends in research in Biological Sciences"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            
+
+            <div class="col-12 col-md-6 p-1">
+                    <div class="border shadow rounded-3 d-flex"  style="border-left:4px solid #2c3e50 !important;" >
+                        <img src="~/assets/trainers/nisha.jpg" class="img-fluid rounded-2" alt="Nisha Ma'am" style="object-fit: cover;">
+                        <div class="ms-2 p-2 w-100">
+                            <h3 class=" pb-2" style="border-bottom: 3px solid #2c3e50">Nisha Bajpai</h3>
+                            <p class="p-2" style="height:15rem;overflow-y: auto;">
+                                "Having a rich experience of over two decades working with the Premier brands in the Test prep industry, training students across the globe from diverse age groups and ethnicities, I offer expert tutoring for Standardized tests. I employ a student-centric approach in my pedagogy and focus on the enhancement of skill sets. My teaching style is interactive, comprehensive, and personalized. I stay updated with the latest test patterns and questions and am passionate about teaching, learning, growing, unlearning, and relearning. Having a well-demonstrated history of successful students on various tests, I take great pride in the fact that my students show a significant improvement in their scores after the classes. Their satisfaction with the learning experience and heart-warming feedback keeps me going every day! I am happy to have a chat about PSAT, SAT, ACT, GRE, or GMAT test and see how I can accelerate your journey towards your dream score. I also mentor students on a pro bono basis."
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
+            </div>
+        
 
             <!-- <div class="row justify-content-center mt-3">
                 <div class="col-12">
@@ -200,7 +240,6 @@
             <!-- <div class="container mt-5">
                 <p class="border border-dark text-center py-3 px-1"> We would love to here from you ! <a class="fw-bold text-black text-decoration-underline text-nowrap" href="/contact">Contact Us</a></p>	
             </div> -->
-        </div>
         
     </main>
 </template>
