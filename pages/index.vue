@@ -96,8 +96,8 @@
 
 		<div id="testimonials" class="w-100 d-flex p-0 p-md-4 mt-5 align-items-center">
 			<div class="container">
-				<div class="row mt-4 pt-1 pt-md-4 text-center text-white">
-					<div class="col-12 col-sm-12 pt-2">
+				<div class="row mt-2 pt-1 pt-md-4 text-center text-white">
+					<div class="col-12 col-sm-12 pt-2 mb-4">
 						<h3 class="fw-bold">Student Testimonials</h3>
 						<p class="fs-5">What our students say about us ! </p>
 					</div>
@@ -105,43 +105,23 @@
 				<div class="row mb-5">
 					<div id="testimonials-in" class="carousel slide" data-bs-ride="true">
 						<div class="carousel-indicators" style="bottom:-2.5rem">
-							<button type="button" v-for="(t,i) of testimonials.length+1" :key="i" data-bs-target="#testimonials-in" :class="{active : i==0}" :data-bs-slide-to="i" :aria-label="`slide-${i}`"></button>
+							<button type="button" v-for="(t,i) of testimonials.length" :key="i" data-bs-target="#testimonials-in" :class="{active : i==0}" :data-bs-slide-to="i" :aria-label="`slide-${i}`"></button>
 						</div>
 						<div class="carousel-inner px-5" role="listbox">
 							<div v-for="(t,i) in testimonials" :key="i" class="carousel-item " :class="{active: i==0}">
 								<div class="row">
 									<div class="col-1 d-none d-sm-block"></div>
-									<div class="col-12 col-sm-10 text-center shadow bg-light py-5" style="min-height:20rem">
+									<div class="col-10 col-sm-10 text-center shadow bg-light py-5" style="min-height:20rem">
 										<div class="d-flex justify-content-between align-items-center px-5 mb-2">
 											<h3 class="p-0 m-0">{{t.name}}</h3>
-											<img :src="`/img/${t.img}`" alt="" height="60" width="55">
+											<img v-if="t.img" :src="`/img/${t.img}`" alt="" height="60" width="55">
 										</div>
 										<p class="text-muted fst-italic px-4" v-html="t.says.substring(0,1000) + (t.says.length>1000 ? '...' : '' )"></p>
-									</div>
-									<div class="col-1 d-none d-sm-block"></div>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<div class="row">
-									<div class="col-1 d-none d-sm-block"></div>
-									<div class="col-12 col-sm-10 text-center shadow bg-light py-5" style="min-height:20rem">
-										<h4 class="text-muted">Video Testimonials</h4>
-										<div class="row justify-content-center align-items-center h-100">
-											<div class="col-10 col-sm-5">
-												<h3>Nandini</h3>
-												<iframe width="100%" height="100%" src="https://drive.google.com/file/d/1MSiWx8sIi83gcYkq9KWn7JxiJEQkM1lb/preview"></iframe>
-													<!-- <a href="https://drive.google.com/file/d/1B5hpH8nT-CFWeUi4r7hijeHPs8uT4_tD/view?usp=sharing" class="text-decoration-none text-warning">Watch Video</a> -->
-											</div>
-											<div class="col-10 col-sm-5">
-												<h3>Brennan James</h3>
-												<iframe width="100%" height="100%" src="https://drive.google.com/file/d/1B5hpH8nT-CFWeUi4r7hijeHPs8uT4_tD/preview"></iframe>
-												<!-- <a href="https://drive.google.com/file/d/1MSiWx8sIi83gcYkq9KWn7JxiJEQkM1lb/view?usp=sharing" class="text-decoration-none text-warning">Watch Video</a> -->
-											</div>
-										</div>
 									</div>
 								</div>
 							</div>
 						</div>
+						
 						<button class="carousel-control-prev" type="button" data-bs-target="#testimonials-in" data-bs-slide="prev">
 							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 							<span class="visually-hidden">Previous</span>
@@ -152,8 +132,22 @@
 						</button>
 					</div>
 				</div>
+				<div class="row text-center">
+					<div class="col-12 col-sm-12">
+						<h3 class="fw-bold text-white text-center py-3 px-1" style="border-radius: 50px;">View all testimonials <a class="fw-bold text-white text-decoration-underline text-nowrap" href="/testimonials">here</a></h3>	
+					</div>
+				</div>
 			</div>
+			
 		</div>
+
+
+		<!-- View more text and button -->
+		<!-- <div class="container mt-5">
+			<p class="text-muted fst-italic border border-dark text-center py-3 px-1"><a class="fw-bold text-black text-decoration-underline text-nowrap" href="/testimonials">Click here</a> to view all testimonials.</p>	
+		</div> -->
+
+
 		<div class="container mt-5">
 			<p class="border border-dark text-center py-3 px-1"> We would love to here from you ! <a class="fw-bold text-black text-decoration-underline text-nowrap" href="/contact">Contact Us</a></p>	
 		</div>
@@ -244,30 +238,11 @@ export default {
 					"says": "Digvijay was a great help to me in preparing for the SATs. He assigned me practice tests as homework and then we would review problems I didn't get correct in our tutoring sessions. In the beginning, I was scoring in the mid 1200s, and he helped me bring my <span class='tmh'>1540</span> final score up to a , with a perfect score in <span class='tmh'>math (800)</span> on both my <span class='tmh'>SAT</span> attempts.",
 					"img" : "testimonials/r2.png"
 				},
-				{
-					"name": "Sahitya Suresh",
-					"says": "Overall, the SAT prep classes I took with Mr. Digvijay and Payel were extremely helpful. The reading and writing classes I had with Payel helped me a lot because they were very personalised and suited towards my weak areas. My math classes with Mr. Digvijay were also <span class='tmh'>personalised</span> to work on the concepts I was weaker on. With the help of Mr. Digvijay and his team, I was able to score a <span class='tmh'>perfect on math</span> and <span class='tmh'>close to perfect on the reading and writing</span> section.\nThese classes were immensely helpful for me and I highly recommend them to anyone that is preparing for the SAT.",
-					"img" : "testimonials/r3.jpeg"
-				},
-				{
-					"name": "Kavni",
-					"says": "With the help of Digvijay Sir, I improved my <span class='tmh'>SAT</span> score by 80 points, achieving a score <span class='tmh'>above a 1500</span>. He taught me with a positive attitude, guiding me through the areas where I needed help and helped me feel confident when I took the test. He also helped me through ap calculus ab and bc, teaching me lessons and helping me with the concepts I couldn't grasp. With his help, I was also able to achieve a <span class='tmh'>5 on the AP exam</span>.",
-					"img" : "testimonials/r4.jpeg"
-				},
-				{
-					"name": "Ronak Kanodia",
-					"says": "It is natural to be skeptical about whether a tutor will really help you, especially in subject such as math, which seem to be something solely derived from pure logic. As a senior hoping to take my math score to the next level, this was something that I struggled with, yet through the advice of a few of my friends, I discovered Digvijay Sir / Preponn. Through their simple yet effective style of teaching, they allowed me to grow my skills in the realm of math. The entire structure of the course was personalized for me, and this allowed me to move at a pace perfect for me. Through the classes here, I felt confident enough to retake the SAT and ended up scoring <span class='tmh'>a perfect score in math for the composite total of 1590!</span>",
-					"img" : "testimonials/r7.jpeg"
-				},
+				
 				{
 					"name": "Riya Chaturvaedi",
 					"says": "Hello! I am Riya Chaturvedi. I had been associated with Preponn Education Pvt ltd for a couple of months. I took English and math classes for SAT exam. Digvijay sir is a proficient mentor and a great guide. He helped me a lot in clearing my concepts and doubts. Even the English tutor was also good at teaching. As a result, I <span class='tmh'>scored 1330 out of 1600 on the SAT exam</span> held on 17 September 2022. I am grateful to tell you I <span class='tmh'>received admission acceptance letters from the University of Texas Arlington, the University of Central Florida, and the University South Alabama</span>. I would highly recommend Preponn Pvt ltd as it is a very efficient, reasonable ,and productive agency, which will not only help in strengthening the concepts but also prepare you for a better score and grade.",
 					"img" : "testimonials/r8.jpeg"
-				},
-				{
-					"name": "Prashant Kumar",
-					"says": "Thanks to Digvijay sir's guidance, I managed to get <span class='tmh'>50 in my quants</span>. Throughout my GMAT journey his strategic planning and experience played a major role in fulfilling all the gaps that I had in my quants section. Without his efforts I wouldn't have been able to get <span class='tmh'>740 in my GMAT</span>. Finally I'm also elated to share that I have <span class='tmh'>received my admit for PGP 2022-23 at ISB Hyderabad.</span>",
-					"img" : "testimonials/r9.jpeg"
 				}
         	]
 		})

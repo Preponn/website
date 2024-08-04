@@ -75,7 +75,7 @@
 <style scoped>
 .container-fluid{
     background-image: url('~/assets/cover1.png');
-    height: 15rem; 
+    height: 18rem; 
     background-position: 50% 50%;
     background-size: cover
 }

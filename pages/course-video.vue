@@ -19,7 +19,7 @@
         </div>
         <div class="container mt-3">
             <div class="row justify-content-center">
-                <h4 class="text-muted text-center mb-3 border-bottom">AP CALCULUS</h4>
+                <h4 class="text-muted text-center mb-3 border-bottom" style="letter-spacing: 4px; font-size: 30px; font-weight: 600;">AP CALCULUS</h4>
                 <div class="row justify-content-center align-items-center h-100">
                     <div class="col-10 col-sm-5 justify-content-center">
                         <iframe width="450" height="315" src="https://www.youtube.com/embed/WVXhMAqg0Qs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -31,7 +31,7 @@
             </div>
 
 			<div class="row justify-content-center mt-4">
-                <h4 class="text-muted text-center mb-3 border-bottom">SAT MATH EXPLANATION</h4>
+                <h4 class="text-muted text-center mb-3 border-bottom" style="letter-spacing: 4px; font-size: 30px; font-weight: 600;">SAT MATH EXPLANATION</h4>
                 <br>
                 <div class="row justify-content-center align-items-center h-100">
                     <div class="col-10 col-sm-5 justify-content-center">
@@ -49,7 +49,7 @@
 <style scoped>
     .container-fluid{
         background-image: url('~/assets/books.jpg');
-        height: 10rem;
+        height: 18rem;
         background-position: 50% 50%;
         background-size: cover; 
         background-size: cover;

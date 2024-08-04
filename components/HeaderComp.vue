@@ -56,11 +56,12 @@
                                 </div>
                             </div>
                         </li>
-                        <!-- <li class="nav-item">
-                            <a href="#" class="nav-link">Details</a>
-                        </li> -->
+                        
                         <li class="nav-item">
                             <NuxtLink to="/course-video" class="nav-link">Course Video</NuxtLink>
+                        </li>
+                        <li class="nav-item">
+                            <NuxtLink to= "/testimonials" class="nav-link">Testimonials</NuxtLink>
                         </li>
                         <li class="nav-item">
                             <NuxtLink to="/contact" class="nav-link">Contact Us</NuxtLink>

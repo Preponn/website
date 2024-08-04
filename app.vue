@@ -44,7 +44,8 @@ nav a {
 }
 
 .footer-link-head:hover{
-	color : #2c3e50;
+	color : rgba(44, 62, 80, 1);
+	/* border-radius: 15px; */
 }
 
 
@@ -76,6 +77,7 @@ nav a {
 
 .nav-link:hover{
   background-color: antiquewhite;
+  border-radius: 12px;
 }
 
 .display-1{

@@ -247,7 +247,7 @@
 <style scoped>
 .container-fluid{
     background-image: url('~/assets/library.jpg'); 
-    height:20rem; 
+    height:18rem; 
     background-position: 50% 50%; 
     background-size: cover
 }
