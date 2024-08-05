@@ -278,7 +278,7 @@ export default {
 
 <style scoped>
 #testimonials{
-	background-image: url('~/assets/mit.jpg'); 
+	background-image: url('~/assets/tester-background-image.jpeg'); 
 	background-size: "cover"
 }
 .container-fluid.banner{
