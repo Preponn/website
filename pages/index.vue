@@ -111,7 +111,7 @@
 							<div v-for="(t,i) in testimonials" :key="i" class="carousel-item " :class="{active: i==0}">
 								<div class="row">
 									<div class="col-1 d-none d-sm-block"></div>
-									<div class="col-10 col-sm-10 text-center shadow bg-light py-5" style="min-height:20rem">
+									<div class="col-12 col-sm-10 text-center shadow bg-light py-5" style="min-height:20rem">
 										<div class="d-flex justify-content-between align-items-center px-5 mb-2">
 											<h3 class="p-0 m-0">{{t.name}}</h3>
 											<img v-if="t.img" :src="`/img/${t.img}`" alt="" height="60" width="55">
