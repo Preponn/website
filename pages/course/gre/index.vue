@@ -14,12 +14,12 @@
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <h3 class="text-white pon-blue-bg p-2">About GRE</h3>
-                    <p class="text-justify lh-4 fs-6 px-3">
+                    <p class="text-justify lh-4 px-3">
                         The Graduate Record Examination, or GRE, is an important step in the graduate school or business school application process. The GRE is a multiple-choice, computer-based, standardized exam that is often required for admission to graduate programs and graduate business programs (MBA) globally.
                     </p>
 
                     <h3 class="text-white pon-bg p-2">Overview</h3>
-                    <p class="text-justify lh-4 fs-6 px-3">
+                    <p class="text-justify lh-4 px-3">
                         <ul>
                             <li>The GRE is a <b>3 hour 45 minute</b> exam.</li>
                             <li>It is typically taken by students who are applying to graduate schools.</li>
@@ -30,7 +30,7 @@
                     </p>
 
                     <h3 class="text-white pon-blue-bg p-2">What we provide</h3>
-                    <p class="text-justify lh-4 fs-6 px-3">
+                    <p class="text-justify lh-4 px-3">
                         The Verbal Section of the GRE is simply a test of vocabulary and reading. So the question
                         always remains, exactly how many words are one required to internalize? Our experts shall only
                         be able to answer this question by reviewing your existing vocabulary. Rest assured, we do not
@@ -39,7 +39,7 @@
                         multiple-intelligences. We ensure that you only learn as many words as you really ever require
                         to score a 160+ in this section. We also help make vocabulary fun.
                     </p>
-                    <p class="text-justify lh-4 fs-6 px-3">
+                    <p class="text-justify lh-4 px-3">
                         As far as reading goes, we lay emphasis on the transition words, to check direction as you read.
                         This makes it easier to read loosely for the Main Idea, Structure, and Author’s Side, even before
                         answering the questions. Additionally, it is always a good idea to attempt answering the
@@ -47,14 +47,14 @@
                         choices. In order to achieve this, we can’t stress enough on practising reading from multiple
                         resources, especially from The Official Guide to the GRE General Test.
                     </p>
-                    <p class="text-justify lh-4 fs-6 px-3">
+                    <p class="text-justify lh-4 px-3">
                         It is too simplistic to claim that the two scored Verbal sections consist of an equal number (20
                         each) of vocab- and reading-based questions. This is because both the skills are really
                         integrated in all of the questions. To add to the complexity, our research through the recent tests
                         has shown that the GRE is evolving their vocab questions by using apparently less eclectic
                         words, but more convoluted structures; In this case, reading regains focus.
                     </p>
-                    <p class="text-justify lh-4 fs-6 px-3">
+                    <p class="text-justify lh-4 px-3">
                         As a rule of thumb, our approach for reading varies with the length of the passages. While
                         longer passages deal with the entire structure, shorter ones require in-depth reading between
                         sentences. Again, there is nothing subjective about the GRE. We handhold you through the
@@ -63,7 +63,7 @@
                         (sometimes, even without reading the questions).
                     </p>
 
-                    <p class="text-center fw-bolder fs-5 mt-5">
+                    <p class="text-center fw-bolder mt-5">
                         <NuxtLink to="/course/gre/register" class="pon-btn heading text-decoration-none p-1 rounded-0 me-2">Register Now</NuxtLink>and prepare for GRE with us ! 
                     </p>
                 </div>
@@ -71,3 +71,10 @@
         </div>
     </main>
 </template>
+
+<style scoped>
+main {
+    line-height: 32px;
+    font-size: 19px;
+}
+</style>

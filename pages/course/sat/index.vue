@@ -20,7 +20,7 @@
                     <h2 class="mt-3 heading p-2 text-white">About SAT</h2>
                     <p class="px-2 fw-bold text-center">
                         We believe in <br>
-                        <span class=" mt-2 fs-3" style="color: #ea8825;font-style: italic;">
+                        <span class=" mt-2" style="color: #ea8825;font-style: italic;">
                             "When prepration meets opportunity,
                             success follows"
                         </span>
@@ -55,30 +55,30 @@
                         <div class="row px-2">
                             <div class="col-12 col-md-6 py-2" style="background: #ea8825;color:#fff">
                                 <h3 class="fs-4" style="border-bottom: 1px solid #fff">Maths</h3>
-                                <div class="d-flex justify-content-between lead fw-bold fs-5 px-2">
+                                <div class="d-flex justify-content-between lead fw-bold  px-2">
                                     <label for="">Total classes</label>
                                     <span>15</span>
                                 </div>
-                                <div class="d-flex justify-content-between  lead fw-bold fs-5 px-2">
+                                <div class="d-flex justify-content-between  lead fw-bold  px-2">
                                     <label for="">Duration</label>
                                     <span>2 hrs each</span>
                                 </div>
-                                <div class="d-flex justify-content-between lead fw-bold fs-5 px-2">
+                                <div class="d-flex justify-content-between lead fw-bold  px-2">
                                     <label for="">Total duration</label>
                                     <span>30 hrs</span>
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 py-2" style="background: #23395d;color:#fff">
                                 <h3 class="fs-4" style="border-bottom: 1px solid #fff">Verbal</h3>
-                                <div class="d-flex justify-content-between lead fw-bold fs-5 px-2">
+                                <div class="d-flex justify-content-between lead fw-bold  px-2">
                                     <label for="">Total classes</label>
                                     <span>15</span>
                                 </div>
-                                <div class="d-flex justify-content-between  lead fw-bold fs-5 px-2">
+                                <div class="d-flex justify-content-between  lead fw-bold px-2">
                                     <label for="">Duration</label>
                                     <span>2 hrs each</span>
                                 </div>
-                                <div class="d-flex justify-content-between lead fw-bold fs-5 px-2">
+                                <div class="d-flex justify-content-between lead fw-bold px-2">
                                     <label for="">Total duration</label>
                                     <span>30 hrs</span>
                                 </div>
@@ -112,30 +112,30 @@
                         <div class="row px-2">
                             <div class="col-12 col-md-6 py-2" style="background: #ea8825;color:#fff">
                                 <h3 class="fs-4" style="border-bottom: 1px solid #fff">Maths</h3>
-                                <div class="d-flex justify-content-between lead fw-bold fs-5 px-2">
+                                <div class="d-flex justify-content-between lead fw-bold  px-2">
                                     <label for="">Total classes</label>
                                     <span>15</span>
                                 </div>
-                                <div class="d-flex justify-content-between  lead fw-bold fs-5 px-2">
+                                <div class="d-flex justify-content-between  lead fw-bold  px-2">
                                     <label for="">Duration</label>
                                     <span>1hr 30m each</span>
                                 </div>
-                                <div class="d-flex justify-content-between lead fw-bold fs-5 px-2">
+                                <div class="d-flex justify-content-between lead fw-bold  px-2">
                                     <label for="">Total duration</label>
                                     <span>22.5 hrs</span>
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 py-2" style="background: #23395d;color:#fff">
                                 <h3 class="fs-4" style="border-bottom: 1px solid #fff">Verbal</h3>
-                                <div class="d-flex justify-content-between lead fw-bold fs-5 px-2">
+                                <div class="d-flex justify-content-between lead fw-bold  px-2">
                                     <label for="">Total classes</label>
                                     <span>15</span>
                                 </div>
-                                <div class="d-flex justify-content-between  lead fw-bold fs-5 px-2">
+                                <div class="d-flex justify-content-between  lead fw-bold  px-2">
                                     <label for="">Duration</label>
                                     <span>1hr 30m each</span>
                                 </div>
-                                <div class="d-flex justify-content-between lead fw-bold fs-5 px-2">
+                                <div class="d-flex justify-content-between lead fw-bold  px-2">
                                     <label for="">Total duration</label>
                                     <span>22.5 hrs</span>
                                 </div>
@@ -188,4 +188,11 @@
         display: flex;
         justify-content: space-between;
     }
+</style>
+
+<style scoped>
+main {
+    line-height: 32px;
+    font-size: 19px;
+}
 </style>

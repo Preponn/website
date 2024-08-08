@@ -42,7 +42,7 @@
                         </p>
                         <div class="row px-4 justify-content-center">
                             <table class="table">
-                                <thead class="heading text-white fs-6" style="border-bottom:2px dotted #EA8825;">
+                                <thead class="heading text-white" style="border-bottom:2px dotted #EA8825;">
                                     <tr>
                                         <th scope="col">Section</th>
                                         <th scope="col">Questions</th>
@@ -128,4 +128,11 @@
         background-color: #23395d;
         border: none;
     }
+</style>
+
+<style scoped>
+main {
+    line-height: 32px;
+    font-size: 19px;
+}
 </style>
