@@ -50,7 +50,7 @@
 				<div class="col-12 p-5 ad-box my-2 text-center col-md-6">
 					<h3 class="fw-bold">High acceptance rate</h3>
 					<p> With our expertise and diverse collective experiences, we take responsibility for each of the students who trust us.</p>
-					<a href="#testimonials" class="pon-clr text-decoration-none">Testimonials ></a>
+					<a href="/testimonials" class="pon-clr text-decoration-none">Testimonials ></a>
 				</div>
 				<div class="col-12 p-5 ad-box my-2 text-center col-md-6">
 					<h3 class="fw-bold">Experienced Trainers</h3>
