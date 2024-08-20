@@ -83,7 +83,10 @@
                         More details <span class="fw-bold" style="color:#23395d">coming soon...</span>
                     </div>
                     <div class="p-2 pt-3 mt-2 text-center border">
-                        <p class="m-0"><a href="/course/act/register" class="btn btn-primary subhead rounded-0">Register Now</a> to get started.</p>
+                        <p class="text-center fw-bolder fs-5">
+                        Still not sure? &nbsp;
+                        <NuxtLink to="/course/act/session" class="pon-btn heading text-decoration-none p-1 rounded-0 me-2">Click here </NuxtLink>to book a free session ! 
+                        </p>
                         <hr>
                         <p class="fst-italic lh-md fw-bold">
                 

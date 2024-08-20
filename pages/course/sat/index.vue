@@ -143,10 +143,11 @@
                         </div>
                                         
                     </div>
-                    <div class="row justify-content-center mt-3  py-2 border m-1">
-                        <div class="col-12 col-sm-6 col-md-4 text-center">
-                            <NuxtLink to="/course/sat/register" class="btn btn-dark subhead rounded-0">Register Now</NuxtLink> to get started.
-                        </div>
+                    <div class="row justify-content-center mt-3 py-2 border m-1">
+                            <p class="text-center fw-bolder fs-5">
+                            Still not sure? &nbsp;
+                            <NuxtLink to="/course/sat/session" class="pon-btn heading text-decoration-none p-1 rounded-0 me-2">Click here </NuxtLink>to book a free session ! 
+                            </p>
                     </div> 
                 </div>
             </div>

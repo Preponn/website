@@ -43,7 +43,8 @@
                     </p>
 
                     <p class="text-center fw-bolder fs-5 mt-5">
-                        <NuxtLink to="/course/psat/register" class="pon-btn heading text-decoration-none p-1 rounded-0 me-2">Register Now</NuxtLink>and prepare for PSAT with us ! 
+                        Still not sure? &nbsp;
+                        <NuxtLink to="/course/psat/session" class="pon-btn heading text-decoration-none p-1 rounded-0 me-2">Click here </NuxtLink>to book a free session ! 
                     </p>
                     
                 </div>

@@ -63,9 +63,11 @@
                         (sometimes, even without reading the questions).
                     </p>
 
-                    <p class="text-center fw-bolder mt-5">
-                        <NuxtLink to="/course/gre/register" class="pon-btn heading text-decoration-none p-1 rounded-0 me-2">Register Now</NuxtLink>and prepare for GRE with us ! 
+                    <p class="text-center fw-bolder fs-5 mt-5">
+                        Still not sure? &nbsp;
+                        <NuxtLink to="/course/gre/session" class="pon-btn heading text-decoration-none p-1 rounded-0 me-2">Click here </NuxtLink>to book a free session ! 
                     </p>
+
                 </div>
             </div>
         </div>

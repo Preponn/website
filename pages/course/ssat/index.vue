@@ -42,7 +42,8 @@
                     </p>
 
                     <p class="text-center fw-bolder fs-5 mt-5">
-                        <NuxtLink to="/course/ssat/register" class="pon-btn heading text-decoration-none p-1 rounded-0 me-2">Register Now</NuxtLink>and prepare for SSAT with us ! 
+                        Still not sure? &nbsp;
+                        <NuxtLink to="/course/ssat/session" class="pon-btn heading text-decoration-none p-1 rounded-0 me-2">Click here </NuxtLink>to book a free session ! 
                     </p>
                     
                 </div>

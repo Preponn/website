@@ -165,6 +165,13 @@
 			</div>
   		</div>
 
+		  <!-- <form method="POST"
+        action="https://script.google.com/macros/s/AKfycbzvMdLTpFCixh1znIrcoMYmvLcdQTt8vHpFTo1QPU3YGRySkDhyMsUap6uoq5tKoCqd/exec">
+        <input name="Email" type="email" placeholder="Email" required>
+        <input name="Name" type="text" placeholder="Name" required>
+        <button type="submit">Send</button>
+    </form> -->
+
 	</main>
 </template>
 
