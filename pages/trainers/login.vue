@@ -12,7 +12,8 @@
                         <label for="password" class="form-label">Password</label>
                         <input type="password" class="form-control" id="password" v-model="password" required>
                     </div>
-                    <button type="submit" class="btn btn-primary" @click="login">Login</button>
+                    <button type="submit" class="btn btn-primary" @click="login" :class="{ 'disabled': loading }">{{
+                        loading ? "Please Wait..." : "Login" }}</button>
                 </form>
             </div>
         </div>
@@ -26,11 +27,13 @@ export default {
     data() {
         return {
             email: '',
-            password: ''
+            password: '',
+            loading: false
         };
     },
     methods: {
         login(e) {
+            this.loading = true;
             e.preventDefault();
             account.createEmailPasswordSession(this.email, this.password).then(() => {
                 this.$router.push('/trainers/dashboard');
