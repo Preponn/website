@@ -39,6 +39,16 @@ export default {
                 this.$router.push('/trainers/dashboard');
             }).catch((error) => {
                 console.error('Login failed', error);
+                swal('Login Failed !', {
+                    icon: 'error',
+                    buttons: {
+                        confirm: {
+                            text: 'Okay',
+                            className: "pon-btn"
+                        }
+                    }
+                });
+                this.$router.push('/');
             });
         }
     },
