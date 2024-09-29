@@ -3,7 +3,8 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - master
+      - main
+  workflow_dispatch:
 
 jobs:
   build:
@@ -24,10 +25,16 @@ jobs:
     - name: Build project
       run: npm run build
 
-    - name: Deploy to build branch
+    - name: Deploy to different repo
+      env:
+        TARGET_REPO: 'username/target-repo'
+        TARGET_BRANCH: 'main'
+        PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
       run: |
-        git config --global user.name 'github-actions[bot]'
-        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git add -f dist
-        git commit -m 'Deploy to build branch'
-        git push origin `git subtree split --prefix dist master`:build --force
+        cd build
+        git init
+        git config user.name 'github-actions[bot]'
+        git config user.email 'github-actions[bot]@users.noreply.github.com'
+        git add .
+        git commit -m 'Deploy to target repo'
+        git push --force https://x-access-token:${{ secrets.PERSONAL_TOKEN }}@github.com/${{ env.TARGET_REPO }} HEAD:${{ env.TARGET_BRANCH }}
