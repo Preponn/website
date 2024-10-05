@@ -37,48 +37,48 @@
                 </div> -->
 
 
-                <div class="col-10">
-                    <h2 style="border-bottom: 1px solid black;" class="pb-2">Attendance: <button type="submit"
-                            class="btn btn-primary" style="float: right; position: relative;" @click="addStudent">
-                            + Add Student
-                        </button></h2>
 
-                    <div class="row">
-                        <table class="table table-bordered">
-                            <thead>
-                                <tr>
-                                    <th scope="col">S. No.</th>
-                                    <th scope="col">Student</th>
-                                    <th scope="col">Present/Absent</th>
-                                    <th scope="col">Action</th>
-                                    <th scope="col">Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr v-for="(student, index) in this.students" :key="index">
-                                    <td>{{ index + 1 }}</td>
-                                    <td>{{ student.name }}</td>
-                                    <td>
-                                        <button type="button" class="btn btn-success"
-                                            @click="markAttendance(true, student)"
-                                            v-if="student.present == undefined">Present</button>
-                                        &nbsp;
-                                        <button type="button" class="btn btn-danger"
-                                            @click="markAttendance(false, student)"
-                                            v-if="student.present == undefined">Absent</button>
-                                    </td>
-                                    <td>
-                                        {{ student.present === true ? 'Present' : student.present === false ? 'Absent'
-                                            : "Not Marked" }}
-                                    </td>
-                                    <td>
-                                        {{ new Date().toLocaleDateString() }}
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                <h2 style="border-bottom: 1px solid black;" class="pb-2">Attendance:
+                    <button type="submit" class="btn btn-primary" style="float: right; position: relative;"
+                        @click="addStudent">
+                        + Add Student
+                    </button>
+                </h2>
+
+                <div class="row px-4 justify-content-center">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col">S. No.</th>
+                                <th scope="col">Student</th>
+                                <th scope="col">Present/Absent</th>
+                                <th scope="col">Action</th>
+                                <th scope="col">Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr v-for="(student, index) in this.students" :key="index">
+                                <td>{{ index + 1 }}</td>
+                                <td>{{ student.name }}</td>
+                                <td>
+                                    <button type="button" class="btn btn-success" @click="markAttendance(true, student)"
+                                        v-if="student.present == undefined">Present</button>
+                                    &nbsp;
+                                    <button type="button" class="btn btn-danger" @click="markAttendance(false, student)"
+                                        v-if="student.present == undefined">Absent</button>
+                                </td>
+                                <td>
+                                    {{ student.present === true ? 'Present' : student.present === false ? 'Absent'
+                                        : "Not Marked" }}
+                                </td>
+                                <td>
+                                    {{ new Date().toLocaleDateString() }}
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
+
 
 
                 <!-- <div class="col-12">

@@ -38,6 +38,7 @@ export default {
             account.createEmailPasswordSession(this.email, this.password).then(() => {
                 this.$router.push('/trainers/dashboard');
             }).catch((error) => {
+                this.loading = false;
                 console.error('Login failed', error);
                 swal('Login Failed !', {
                     icon: 'error',
@@ -48,7 +49,7 @@ export default {
                         }
                     }
                 });
-                this.$router.push('/');
+                this.$router.push('/trainers/login');
             });
         }
     },
