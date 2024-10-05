@@ -180,19 +180,27 @@ export default {
         },
 
         markAttendance(present, students) {
-            databases.createDocument(databaseID, attendanceCollectionID, ID.unique(), {
-                present: present,
-                students: students.$id,
-                subject: this.subject.$id,
-                date: new Date(),
-            }).then((d) => {
+            databases.getDocument(databaseID, attendanceCollectionID, students.$id).then((d) => {
                 console.log(d);
-                students.present = present;
-                // this.present = d.present;
-                // alert('Attendance marked');
-            })
-        }
+                this.present = d.present;
+            }).catch(() => {
+                databases.createDocument(databaseID, attendanceCollectionID, ID.unique(), {
+                    present: present,
+                    students: students.$id,
+                    subject: this.subject.$id,
+                    date: new Date(),
+                }).then((d) => {
+                    console.log(d);
+                    students.present = present;
+                    // this.present = d.present;
+                    // alert('Attendance marked');
+                });
+            });
+        },
     },
+
+
+
 
     created() {
         account.get().then((d) => {
@@ -214,7 +222,10 @@ export default {
             this.loading = false;
         });
     }
-}
+};
+
+
+
 
 
 </script>
