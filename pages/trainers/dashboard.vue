@@ -180,21 +180,20 @@ export default {
         },
 
         markAttendance(present, students) {
-            databases.getDocument(databaseID, attendanceCollectionID, students.$id).then((d) => {
+            // databases.getDocument(databaseID, attendanceCollectionID, students.$id).then((d) => {
+            //     console.log(d);
+            //     present = d.present;
+            // }).catch(() => {
+            databases.createDocument(databaseID, attendanceCollectionID, ID.unique(), {
+                present: present,
+                students: students.$id,
+                subject: this.subject.$id,
+                date: new Date(),
+            }).then((d) => {
                 console.log(d);
-                this.present = d.present;
-            }).catch(() => {
-                databases.createDocument(databaseID, attendanceCollectionID, ID.unique(), {
-                    present: present,
-                    students: students.$id,
-                    subject: this.subject.$id,
-                    date: new Date(),
-                }).then((d) => {
-                    console.log(d);
-                    students.present = present;
-                    // this.present = d.present;
-                    // alert('Attendance marked');
-                });
+                students.present = present;
+                // this.present = d.present;
+                // alert('Attendance marked');
             });
         },
     },

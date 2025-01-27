@@ -1,11 +1,12 @@
 <template>
     <main>
-        <CoursePageHeader course="SAT"/>
+        <CoursePageHeader course="SAT" />
         <div class="container-fluid">
             <div class="reg-btn-div row justify-content-center py-2 bg-dark text-center">
                 <div id="reg-btn" class="col text-white fw-bold">
-                    <NuxtLink to="/course/sat/register" class="text-white heading text-decoration-none p-1 rounded-0 me-2">Register Now</NuxtLink>
-                    and get your scores improved ! 
+                    <NuxtLink to="/course/sat/register"
+                        class="text-white heading text-decoration-none p-1 rounded-0 me-2">Register Now</NuxtLink>
+                    and get your scores improved !
                 </div>
             </div>
         </div>
@@ -13,7 +14,8 @@
             <div class="row justify-content-center mt-2">
                 <div class="d-flex justify-content-between align-items-center">
                     <h3 class="h3">Course Structure</h3>
-                    <a href="/brochure.pdf" class="btn text-white p-1 rounded-0 fw-bold btn-warning heading">Download Brochure</a>
+                    <a href="/brochure.pdf" class="btn text-white p-1 rounded-0 fw-bold btn-warning heading">Download
+                        Brochure</a>
                 </div>
                 <hr>
                 <div class="col-3 d-none d-md-block border">
@@ -34,11 +36,11 @@
                     </p>
                 </div>
                 <div class="col-12 col-md-9">
-                    
+
                     <div class="p-2 border">
                         <h4 id="HASH" class="subhead text-white px-2">
-                        <span id="time-HASH" class="smalltext">SAT Batch</span>
-                        <span class="ios-circle">1700$</span>
+                            <span id="time-HASH" class="smalltext">SAT Batch</span>
+                            <span class="ios-circle">2000$</span>
                         </h4>
                         <label class="text-muted text-italic px-2">1-4 students per batch</label>
                         <ul>
@@ -83,7 +85,7 @@
                                     <span>30 hrs</span>
                                 </div>
                             </div>
-                        </div> 
+                        </div>
                     </div>
 
                     <hr>
@@ -91,8 +93,8 @@
                     <div class="p-2 mt-3 border">
                         <!-- <h4 class="subhead text-white px-2">SAT One-on-One 2200$</h4> -->
                         <h4 id="HASH" class="subhead text-white px-2">
-                        <span id="time-HASH" class="smalltext">SAT One-on-One</span>
-                        <span class="ios-circle">2200$</span>
+                            <span id="time-HASH" class="smalltext">SAT One-on-One</span>
+                            <span class="ios-circle">2500$</span>
                         </h4>
                         <label class="text-muted text-italic px-2">1 student, 1 trainer each for Math and Verbal</label>
                         <ul>
@@ -141,54 +143,62 @@
                                 </div>
                             </div>
                         </div>
-                                        
+
                     </div>
                     <div class="row justify-content-center mt-3 py-2 border m-1">
-                            <p class="text-center fw-bolder fs-5">
+                        <p class="text-center fw-bolder fs-5">
                             Still not sure? &nbsp;
-                            <NuxtLink to="/course/sat/session" class="pon-btn heading text-decoration-none p-1 rounded-0 me-2">Click here </NuxtLink>to book a free session ! 
-                            </p>
-                    </div> 
+                            <NuxtLink to="/course/sat/session"
+                                class="pon-btn heading text-decoration-none p-1 rounded-0 me-2">Click here </NuxtLink>to
+                            book a free session !
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
-    
+
 </template>
 
 <style>
-    #reg-btn{
-        animation: breathe infinite 1s;
-    }
-    .reg-btn-div{
-        overflow:hidden
-    }
-    @keyframes breathe{
-        0%{
-            transform: scale(1);
-        }
-        50%{
-            transform: scale(1.1);
-        }
-        100%{
-            transform: scale(1);
-        }
-    }
-    #reg-btn:hover{
-        animation: none;
-    }
-    .heading{
-        background-color: #ea8825;
+#reg-btn {
+    animation: breathe infinite 1s;
+}
+
+.reg-btn-div {
+    overflow: hidden
+}
+
+@keyframes breathe {
+    0% {
+        transform: scale(1);
     }
 
-    .subhead{
-        background-color: #23395d;
+    50% {
+        transform: scale(1.1);
     }
 
-    #HASH {
-        display: flex;
-        justify-content: space-between;
+    100% {
+        transform: scale(1);
     }
+}
+
+#reg-btn:hover {
+    animation: none;
+}
+
+.heading {
+    background-color: #ea8825;
+}
+
+.subhead {
+    background-color: #23395d;
+}
+
+#HASH {
+    display: flex;
+    justify-content: space-between;
+}
 </style>
 
 <style scoped>
